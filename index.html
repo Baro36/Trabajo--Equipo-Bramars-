@@ -1,104 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color:#ADB395;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: WHITE;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color:#CDB09A;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Natural Life</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="images/logo andre y vale y eqyuipo y marisa y saul.jpg">
 </head>
 <body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img class="logo-icon" src="images/logo andre y vale y eqyuipo y marisa y saul.jpg" alt="Hoja Logo">
+                The Natural Life
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h2>CSS Layout Float</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+    <section id="home">
+        <div class="content">
+            <h1>Bienvenido a</h1>
+            <img class="home-logo" src="images/logo andre y vale y eqyuipo y marisa y saul.jpg" alt="Hoja Logo">
+            <p>Menos quimicos más vida.</p>
+        </div>
+    </section>
 
-<header>
-  <h2>The natural life</h2>
-</header>
+    <section id="about">
+        <div class="content">
+            <h2>Sobre Nosotros</h2>
+            <p>Ofrecemos productos naturales de calidad para tu bienestar.</p>
+            <img src="images/okeyy.avif" alt="nuestros productos" class="about-image">
+        </div>
+    </section>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">Plantas</a></li>
-      <li><a href="#">Cremas</a></li>
-      <li><a href="#">Shampoo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
+    <section id="menu">
+        <div class="content">
+            <h2>Nuestra variedad de productos</h2>
+            <p>¡Explora nuestra variedad de productos!</p>
+            
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/coco.jpg" alt="coco" class="menu-image">
+                    <h3>Crema de coco</h3>
+                    <p>Una senacion suave en la piel y rehidratante.</p>
+                </div>
 
-<footer>
-  <p>Footer</p>
-</footer>
+                <div class="menu-item">
+                    <img src="images/almendra.jpg" alt="Aceite de almendras" class="menu-image">
+                    <h3>Aceite de almendra</h3>
+                    <p>Un aceite que hace que tu piel tenga una sensacio suave.</p>
+                </div>
 
+                <div class="menu-item">
+                    <img src="images/BABADECARA.webp" alt="Baba de caracol" class="menu-image">
+                    <h3>Jabon de Caracol</h3>
+                    <p>Un Pequeño Jabon compuesto de baba de caracol que mantiene cuidada tu piel.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/argán.png" alt="Argán" class="menu-image">
+                    <h3>Aceite de argán</h3>
+                    <p>Aceite con vitaminas E que te ayuda con el cuidado de tus uñas, pelo y piel.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/Karié.png" alt="karité" class="menu-image">
+                    <h3>Manteca de karité</h3>
+                    <p>Crema que te ayuda a hidratar, nutrir y proteger tu piel.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/oliva.webp" alt="Aceite" class="menu-image">
+                    <h3>Aceite de oliva</h3>
+                    <p>Aceite contra arrugas.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/Ricino.jpg" alt="Aceite para el cabello" class="menu-image">
+                    <h3>Aceite de ricino</h3>
+                    <p>El aceite de ricino ayuda a nutrir tu cabello.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/Jojoba.jpg" alt="Aceite de jojoba" class="menu-image">
+                    <h3>Aceite de jojoba</h3>
+                    <p>Aceite con propiedades antiflamaturias.</p>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/Sésamo.jpg" alt="Aceite de sésamo" class="menu-image">
+                    <h3>Aceite de sésamo</h3>
+                    <p>Aceite que con su acción humectante y nutritiva deja tu piel equilibrada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <p>&copy; 2025 The Natural Life. All rights reserved.</p>
+            <p>Contáctanos: <a href="mailto:contact@coffeehouse.com">Natural@life.com</a></p>
+            <p>Teléfono: (656) 123 4567</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <img src="images/social/facebook.png" alt="Facebook">
+                </a> 
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <img src="images/social/instagram.png" alt="Instagram">
+                </a> 
+                <a href="https://www.whatsapp.com/" aria-label="WhatsApp">
+                    <img src="images/social/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
